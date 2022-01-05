@@ -24,11 +24,15 @@ find_package(sensor_msgs REQUIRED)
 add_executable(mono_image_pub src/mono_image_pub.cpp)
 ament_target_dependencies(mono_image_pub rclcpp OpenCV sensor_msgs)
 
+add_executable(stereo_image_pub src/stereo_image_pub.cpp)
+ament_target_dependencies(stereo_image_pub rclcpp OpenCV sensor_msgs)
+
 add_executable(camera_calibration_pub src/camera_calibration_pub.cpp)
 ament_target_dependencies(camera_calibration_pub rclcpp sensor_msgs)
 
 install(TARGETS
   mono_image_pub
+  stereo_image_pub
   camera_calibration_pub
   DESTINATION lib/${PROJECT_NAME})
 

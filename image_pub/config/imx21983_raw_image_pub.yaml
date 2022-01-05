@@ -1,0 +1,66 @@
+
+image_publisher_left:
+  ros__parameters:
+    framerate: 20
+    sensor_id: 1
+    namespace: /camera/left
+    frame_id: camera_link
+
+    camera/fx: 455.604523
+    camera/fy: 456.343784
+    camera/cx: 325.222986
+    camera/cy: 234.619707
+
+    camera/k1: -0.048360
+    camera/k2: 0.097424
+    camera/p1: 0.000230
+    camera/p2: -0.007085
+
+    camera/width: 640
+    camera/height: 480
+
+    camera/r12: -0.004349
+    camera/r13: -0.002608
+    camera/r21: 0.004351
+    camera/r23: 0.000788
+    camera/r31: 0.002604
+    camera/r32: -0.000799
+
+    camera/fx_p: 473.365387
+    camera/fy_p: 473.365387
+    camera/cx_p: 316.933380
+    camera/cy_p: 233.062805
+    camera/Tx: 0.0
+
+image_publisher_right:
+  ros__parameters:
+    framerate: 20
+    sensor_id: 0
+    namespace: /camera/right
+    frame_id: camera_link
+
+    camera/fx: 451.441186
+    camera/fy: 452.793124
+    camera/cx: 319.937855
+    camera/cy: 230.854644
+
+    camera/k1: -0.004892
+    camera/k2: 0.010978
+    camera/p1: 0.000366
+    camera/p2: -0.000060
+
+    camera/width: 640
+    camera/height: 480
+
+    camera/r12: -0.015003
+    camera/r13: 0.011572
+    camera/r21: 0.015012
+    camera/r23: -0.000707
+    camera/r31: -0.011560
+    camera/r32: 0.000880
+
+    camera/fx_p: 473.365387
+    camera/fy_p: 473.365387
+    camera/cx_p: 316.933380
+    camera/cy_p: 233.062805
+    camera/Tx: -30.264956

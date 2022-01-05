@@ -18,7 +18,7 @@ def generate_launch_description():
         default_value=TextSubstitution(
             text=os.path.join(
                 share_dir,
-                "config/imx21983_image_pub.yaml"
+                "config/imx21983_raw_image_pub.yaml"
             )
         )
     )
@@ -29,27 +29,7 @@ def generate_launch_description():
         Node(
             package='image_pub',
             executable='mono_image_pub',
-            name='image_publisher_right',
-            output='screen',
-            parameters=[
-                LaunchConfiguration('path_to_parameters'),
-            ]
-        ),
-
-        Node(
-            package='image_pub',
-            executable='mono_image_pub',
-            name='image_publisher_left',
-            output='screen',
-            parameters=[
-                LaunchConfiguration('path_to_parameters'),
-            ]
-        ),
-
-        Node(
-            package='image_pub',
-            executable='camera_calibration_pub',
-            name='camera_info_publisher',
+            name='raw_image_publisher',
             output='screen',
             parameters=[
                 LaunchConfiguration('path_to_parameters'),
